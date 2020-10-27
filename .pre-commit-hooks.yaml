@@ -15,7 +15,7 @@
   args: ["/phpda/config/config_PACKAGE_LVL_0.yml"]
 
 - id: docker-phpda-2
-  name: PHP Dependency Analysis in 'Domain/Framework'
+  name: PHP Dependency Analysis in 'Domain/ & Framework/'
   description: Run `phpda` to find possible cycles
   language: docker_image
   files: (source/Internal/.+\.php)$
