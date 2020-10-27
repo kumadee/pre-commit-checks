@@ -49,9 +49,9 @@ There are several [pre-commit](https://pre-commit.com/) hooks to keep PHP source
 
 | Hook name                                        | Description                                                                                                                |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| `docker-phpda-0`                                 | Checks for possible dependency cycles and herarchy violations in classes.                                                  |
-| `docker-phpda-1`                                 | Checks for possible dependency cycles and herarchy violations in 'Internal'.                                               |
-| `docker-phpda-2`                                 | Checks for possible dependency cycles and herarchy violations in 'Domain/Framework'.                                       |
-| `docker-phpda-3`                                 | Checks for possible dependency cycles and herarchy violations in 'Framework/Module'.                                       |
+| `docker-phpda-0`                                 | Checks for possible dependency cycles and hierarchy violations in classes.                                                 |
+| `docker-phpda-1`                                 | Checks for possible dependency cycles and hierarchy violations in 'Internal'.                                              |
+| `docker-phpda-2`                                 | Checks for possible dependency cycles and hierarchy violations in 'Domain/Framework'.                                      |
+| `docker-phpda-3`                                 | Checks for possible dependency cycles and hierarchy violations in 'Framework/Module'.                                      |
 
 Check the [source file](https://github.com/kumadee/pre-commit-terraform/blob/master/.pre-commit-hooks.yaml) to know arguments used for each hook.
