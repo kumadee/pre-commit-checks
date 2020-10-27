@@ -1,0 +1,31 @@
+- id: docker-phpda-0
+  name: PHP Dependency Analysis in 'Classes'
+  description: Run `phpda` to find possible cycles
+  language: docker_image
+  files: (source/Internal/Framework/Module/.+\.php)$
+  entry: oxid/phpda:latest
+  args: ["/phpda/config/config_PACKAGE_LVL_2.yml"]
+
+- id: docker-phpda-1
+  name: PHP Dependency Analysis in 'Internal'
+  description: Run `phpda` to find possible cycles
+  language: docker_image
+  files: (source/Internal/Framework/Module/.+\.php)$
+  entry: oxid/phpda:latest
+  args: ["/phpda/config/config_PACKAGE_LVL_0.yml"]
+
+- id: docker-phpda-2
+  name: PHP Dependency Analysis in 'Domain/Framework'
+  description: Run `phpda` to find possible cycles
+  language: docker_image
+  files: (source/Internal/.+\.php)$
+  entry: oxid/phpda:latest
+  args: ["/phpda/config/config_PACKAGE_LVL_1.yml"]
+
+- id: docker-phpda-3
+  name: PHP Dependency Analysis in 'Framework/Module'
+  description: Run `phpda` to find possible cycles
+  language: docker_image
+  files: (source/Internal/Framework/Module/.+\.php)$
+  entry: oxid/phpda:latest
+  args: ["/phpda/config/config_PACKAGE_LVL_2.yml"]

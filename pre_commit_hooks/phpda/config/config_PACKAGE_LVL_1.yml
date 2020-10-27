@@ -1,0 +1,18 @@
+#config_PACKAGE_LVL_1.yml
+mode: 'usage'
+source: '/src/source/Internal'
+ignore:
+ - Container
+ - Theme
+ - Transition
+filePattern: '*.php'
+formatter: 'PhpDA\Writer\Strategy\SVG_TXT_CLASS'
+target: '/src/PACKAGE_LVL_1.txt'
+visitor:
+ - PhpDA\Parser\Visitor\TagCollector
+ - PhpDA\Parser\Visitor\SuperglobalCollector
+visitorOptions:
+ PhpDA\Parser\Visitor\Required\DeclaredNamespaceCollector: {minDepth: 4, sliceLength: 5}
+ PhpDA\Parser\Visitor\Required\MetaNamespaceCollector: {minDepth: 4, sliceLength: 5}
+ PhpDA\Parser\Visitor\Required\UsedNamespaceCollector: {minDepth: 4, sliceLength: 5}
+ PhpDA\Parser\Visitor\TagCollector: {minDepth: 4, sliceLength: 5}

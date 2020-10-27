@@ -1,0 +1,11 @@
+#config_CLASS.yml
+mode: 'usage'
+source: '/src/source/Internal'
+filePattern: '*.php'
+ignore: 'tests'
+formatter: 'PhpDA\Writer\Strategy\SVG_TXT_CLASS'
+target: '/src/CLASS.txt'
+groupLength: 1
+visitor:
+  - PhpDA\Parser\Visitor\TagCollector
+  - PhpDA\Parser\Visitor\SuperglobalCollector
