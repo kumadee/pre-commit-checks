@@ -41,4 +41,4 @@
   entry: pre_commit_hooks/check_string_occurrence.sh
   files: \.php$
   exclude: (source/Internal/Container/.+\.php|source/Core/.*)$
-  args: ["--color=always", "-e", "ContainerFactory"]
+  args: ["-n", "--color=auto", "-e", "ContainerFactory"]
