@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -eo pipefail
+set -e
 
 fail_if_found() {
   if [ "$?" == "0" ]; then
