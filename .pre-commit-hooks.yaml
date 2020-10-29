@@ -5,7 +5,7 @@
   files: (source/Internal/Framework/Module/.+\.php)$
   entry: oxid/phpda:latest
   pass_filenames: false
-  args: ["--", "/phpda/config/config_CLASS.yml"]
+  args: ["-q", "--", "/phpda/config/config_CLASS.yml"]
 
 - id: docker-phpda-1
   name: PHP Dependency Analysis in 'Internal'
@@ -14,7 +14,7 @@
   files: (source/Internal/Framework/Module/.+\.php)$
   entry: oxid/phpda:latest
   pass_filenames: false
-  args: ["--", "/phpda/config/config_PACKAGE_LVL_0.yml"]
+  args: ["-q", "--", "/phpda/config/config_PACKAGE_LVL_0.yml"]
 
 - id: docker-phpda-2
   name: PHP Dependency Analysis in 'Domain/ & Framework/'
@@ -23,7 +23,7 @@
   files: (source/Internal/.+\.php)$
   entry: oxid/phpda:latest
   pass_filenames: false
-  args: ["--", "/phpda/config/config_PACKAGE_LVL_1.yml"]
+  args: ["-q", "--", "/phpda/config/config_PACKAGE_LVL_1.yml"]
 
 - id: docker-phpda-3
   name: PHP Dependency Analysis in 'Framework/Module'
@@ -32,4 +32,4 @@
   files: (source/Internal/Framework/Module/.+\.php)$
   entry: oxid/phpda:latest
   pass_filenames: false
-  args: ["--", "/phpda/config/config_PACKAGE_LVL_2.yml"]
+  args: ["-q", "--", "/phpda/config/config_PACKAGE_LVL_2.yml"]
