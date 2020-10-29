@@ -7,7 +7,7 @@ ignore:
  - Transition
 filePattern: '*.php'
 formatter: 'PhpDA\Writer\Strategy\SVG_TXT_CLASS'
-target: '/src/PACKAGE_LVL_1.txt'
+target: '/dev/null'
 visitor:
  - PhpDA\Parser\Visitor\TagCollector
  - PhpDA\Parser\Visitor\SuperglobalCollector

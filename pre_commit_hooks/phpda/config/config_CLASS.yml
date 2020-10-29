@@ -4,7 +4,7 @@ source: '/src/source/Internal'
 filePattern: '*.php'
 ignore: 'tests'
 formatter: 'PhpDA\Writer\Strategy\SVG_TXT_CLASS'
-target: '/src/CLASS.txt'
+target: '/dev/null'
 groupLength: 1
 visitor:
   - PhpDA\Parser\Visitor\TagCollector

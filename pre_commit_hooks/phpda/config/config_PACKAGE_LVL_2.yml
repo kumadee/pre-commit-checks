@@ -3,7 +3,7 @@ mode: 'usage'
 source: '/src/source/Internal/Framework/Module/**'
 filePattern: '*.php'
 formatter: 'PhpDA\Writer\Strategy\SVG_TXT_CLASS'
-target: '/src/PACKAGE_LVL_2.txt'
+target: '/dev/null'
 visitor:
  - PhpDA\Parser\Visitor\TagCollector
  - PhpDA\Parser\Visitor\SuperglobalCollector
