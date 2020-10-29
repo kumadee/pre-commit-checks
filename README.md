@@ -53,5 +53,6 @@ There are several [pre-commit](https://pre-commit.com/) hooks to keep PHP source
 | `docker-phpda-1`                                 | Checks for possible dependency cycles and hierarchy violations in 'Internal'.                                              |
 | `docker-phpda-2`                                 | Checks for possible dependency cycles and hierarchy violations in 'Domain/Framework'.                                      |
 | `docker-phpda-3`                                 | Checks for possible dependency cycles and hierarchy violations in 'Framework/Module'.                                      |
+| `container-factory-check`                        | Check if 'ContainerFactory' class is used in PHP source code.                                                              |
 
-Check the [source file](https://github.com/kumadee/pre-commit-terraform/blob/master/.pre-commit-hooks.yaml) to know arguments used for each hook.
+Check the [source file](https://github.com/kumadee/pre-commit-php/blob/master/.pre-commit-hooks.yaml) to know arguments used for each hook.
