@@ -33,3 +33,12 @@
   entry: oxid/phpda:latest
   pass_filenames: false
   args: ["-q", "--", "/phpda/config/config_PACKAGE_LVL_2.yml"]
+
+- id: container-factory-check
+  name: Check 'ContainerFactory' used
+  description: Check if 'ContainerFactory' class is used in source code
+  language: script
+  entry: pre_commit_hooks/check_string_occurrence.sh
+  files: \.php$
+  exclude: (source/Internal/Container/.+\.php|source/Core/.*)$
+  args: ["--color=always", "-e", "ContainerFactory"]
